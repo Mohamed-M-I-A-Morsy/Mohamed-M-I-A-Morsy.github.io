@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f4f1e9">
+<meta name="theme-color" content="#101112">
 <meta name="description" content="ODEscent: an interactive rocket booster landing simulator integrating MATLAB Runge-Kutta dynamics and Arduino controls.">
 <title>ODEscent | Rocket Landing Simulator — Mohamed Morsy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#f4f1e9;--ink:#242522;--muted:#686b61;--accent:#b44d33;--olive:#69765a;--line:#d9d4c8;--card:#fffdf9;--deep:#14263b}
+:root{--paper:#101112;--ink:#f7f7f2;--muted:#bcbcb4;--accent:#FFD400;--olive:#FFD400;--line:#393939;--card:#1b1b1b;--deep:#14263b}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.66 'DM Sans',Arial,sans-serif}a{color:inherit}a:hover{color:var(--accent)}.wrap{max-width:1160px;width:calc(100% - 48px);margin:auto}
 .topbar{padding:23px 0;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font:700 14px 'Space Grotesk',sans-serif;letter-spacing:-.02em;text-decoration:none}.back{font-size:13px;text-decoration:none;border:1px solid var(--line);padding:9px 15px;border-radius:3px;background:var(--card)}.eyebrow{font:700 11px 'Space Grotesk',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
 .hero{padding:70px 0 35px;display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}.hero h1{font:700 clamp(55px,8vw,98px)/.94 'Space Grotesk',sans-serif;letter-spacing:-.065em;margin:17px 0 14px}.hero h2{font:600 clamp(24px,3vw,37px)/1.14 'Space Grotesk',sans-serif;letter-spacing:-.045em;margin:0 0 20px}.lead{font-size:16px;color:#55584e;max-width:530px}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}.tag{font:600 11px 'Space Grotesk',sans-serif;border:1px solid var(--line);background:var(--card);padding:8px 12px;border-radius:100px}.hero-figure{margin:0;border:1px solid var(--line);background:var(--card);padding:13px}.hero-figure img{display:block;width:100%;height:auto;max-height:465px;object-fit:contain;background:#101b35}.caption{margin:10px 0 0;font-size:12px;color:var(--muted)}
@@ -24,6 +24,19 @@
 /* Compact, paired gameplay figures: full image retained, no crop */
 .gameplay-gallery .figure a{min-height:0}
 .gameplay-gallery .figure img{width:100%;height:245px;max-height:none;object-fit:contain}
+
+/* Dalhousie-inspired black and gold case-study palette */
+html{color-scheme:dark}
+body{background:radial-gradient(ellipse at 76% 4%,rgba(255,212,0,.045),transparent 39%),var(--paper)}
+.topbar{border-bottom-color:#494334}
+.lead,.sectionhead p,.prose,.details p,.details ul,.constraint p{color:var(--muted)}
+.figure a{background:#fff}
+.figure.dark a{background:#101b35}
+.note{background:#29271e;border-left-color:var(--accent);color:#dfdacf}
+.metric,.constraint,.figure,.hero-figure,.tag,.back{background:var(--card);border-color:var(--line)}
+.metrics strong{color:var(--ink)}
+.stats,.section,.foot{border-color:var(--line)}
+
 </style>
 </head>
 <body>
