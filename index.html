@@ -85,10 +85,21 @@ body{background:radial-gradient(ellipse at 78% 6%,rgba(255,212,0,.055),transpare
 
 /* Education and Certifications panel titles */
 .lower .panel h2.panel-heading-gold{font:700 clamp(23px,2.3vw,27px)/1.2 'Space Grotesk',sans-serif;letter-spacing:-.035em;color:var(--accent);margin:0 0 20px}
+
+/* Future recommendation letters: consistent black-and-gold layout */
+.recommendation-section{padding:5px 0 85px}
+.recommendation-section .section-head{border-top:1px solid var(--line);padding-top:30px;margin:0 0 22px}
+.recommendation-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.recommendation-card{min-width:0;min-height:220px;background:var(--white);border:1px solid var(--line);padding:27px 29px;display:flex;flex-direction:column}
+.recommendation-type{color:var(--accent);font:700 10px 'DM Sans',sans-serif;letter-spacing:.16em}
+.recommendation-card h3{font:600 24px/1.2 'Space Grotesk',sans-serif;letter-spacing:-.04em;margin:12px 0}
+.recommendation-card p{color:var(--muted);font-size:13px;max-width:470px;margin:0 0 25px;line-height:1.65}
+.recommendation-state{color:var(--accent);font:600 11px 'DM Sans',sans-serif;letter-spacing:.03em;margin-top:auto;border-top:1px solid var(--line);padding-top:14px}
+@media(max-width:640px){.recommendation-grid{grid-template-columns:1fr}.recommendation-card{min-height:190px;padding:24px}.recommendation-section{padding-bottom:55px}}
 </style>
 </head>
 <body>
-  <header class="topbar"><nav class="wrap nav" aria-label="Main navigation"><a href="#home" class="logo">MOHAMED MORSY</a><div class="navlinks"><a href="#projects">Completed</a><a href="#current-projects">Current</a><a href="#credentials">Education</a><a href="#contact">Contact</a></div></nav></header>
+  <header class="topbar"><nav class="wrap nav" aria-label="Main navigation"><a href="#home" class="logo">MOHAMED MORSY</a><div class="navlinks"><a href="#projects">Completed</a><a href="#current-projects">Current</a><a href="#credentials">Education</a><a href="#recommendation-letters">Letters</a><a href="#contact">Contact</a></div></nav></header>
   <main id="home" class="wrap">
     <section class="hero" aria-labelledby="intro-title"><div><div class="eyebrow">MOHAMED MORSY · DALHOUSIE UNIVERSITY</div><h1 id="intro-title">Mechanical Engineering<br><em>Portfolio.</em></h1><p class="hero-sub">CAD Design · Coding Projects · CFD · FEM · Engineering Projects</p><div class="meta"><span class="pill">Graduating April 2027 (expected)</span><span class="pill">SolidWorks</span><span class="pill">Open to opportunities</span></div></div><div class="hero-art" aria-label="Abstract technical line drawing of a mechanical assembly"><svg viewBox="0 0 460 330" role="img" aria-label="Decorative mechanical concept illustration"><g fill="none" stroke="#383b35" stroke-linecap="round" stroke-linejoin="round"><path d="M89 104 226 48 373 102 239 161Z" stroke-width="2.5"/><path d="M89 104v101l150 66V161M373 102v103l-134 66" stroke-width="2.5"/><path d="M117 119v70l119 51M343 120v67l-104 45" stroke-width="1.4"/><path d="M173 70v68l-35 16v56M295 74v69l35 15v58" stroke-dasharray="6 5"/><ellipse cx="239" cy="160" rx="41" ry="17" stroke-width="2"/><path d="M198 160v44c0 10 18 20 41 20s41-10 41-20v-44" stroke-width="2"/><ellipse cx="239" cy="204" rx="41" ry="17"/><path d="M65 270h338M61 48v223M400 48v223" stroke="#b44d33" stroke-width="1" stroke-dasharray="5 8"/></g><g fill="#b44d33"><circle cx="89" cy="104" r="5"/><circle cx="373" cy="102" r="5"/><circle cx="239" cy="271" r="5"/></g><g fill="#656a60" font-family="Arial" font-size="10"><text x="72" y="40">ISOMETRIC / DESIGN STUDY</text><text x="313" y="298">01 — MODEL</text></g></svg><div class="artlabel"><span>Engineering · CAD · Simulation</span><span>Portfolio / 01</span></div></div></section>
     <section id="projects" class="work" aria-labelledby="projects-heading"><div class="section-head"><h2 id="projects-heading">Completed projects</h2></div><div class="project-grid">
@@ -101,6 +112,23 @@ body{background:radial-gradient(ellipse at 78% 6%,rgba(255,212,0,.055),transpare
       <article class="project"><div class="project-visual v4"><svg viewBox="0 0 430 210"><defs><linearGradient id="temp" x1="0" x2="1"><stop stop-color="#e9d3b1"/><stop offset=".5" stop-color="#a9ae8a"/><stop offset="1" stop-color="#ad5138"/></linearGradient></defs><rect x="85" y="35" width="260" height="140" fill="url(#temp)"/><g stroke="#f5f0e4" opacity=".75"><path d="M111 35v140M137 35v140M163 35v140M189 35v140M215 35v140M241 35v140M267 35v140M293 35v140M319 35v140M85 58h260M85 81h260M85 104h260M85 127h260M85 150h260"/></g></svg></div><div class="project-body"><div class="tag">Numerical Methods · CFD Coursework</div><h3>Computational Heat Transfer</h3><p>Numerical modelling and thermal analysis coursework. Detailed code and results to be added.</p><div class="foot"><span>Numerical analysis</span><span>Details forthcoming</span></div></div></article>
     </div></section>
     <section class="lower" aria-labelledby="education-skills-heading"><div class="section-head education-skills-heading"><h2 id="education-skills-heading">Education &amp; Certifications</h2></div><div id="credentials" class="panel"><h2 class="panel-heading-gold">Education</h2><div class="dal-affiliation"><a href="https://www.dal.ca/" target="_blank" rel="noopener noreferrer" aria-label="Dalhousie University website"><img src="https://www.dal.ca/content/dam/www/cmc-content-admin/brand/dal-logo-horizontal-white.png.lt_adb3a7e6430c5d749368a5303652745a.res/dal-logo-horizontal-white.png" alt="Dalhousie University official white horizontal logo" loading="lazy"></a><p>Education at Dalhousie University · Independent student portfolio</p></div><div class="lineitem"><b>BEng · Mechanical Engineering</b><small>Dalhousie · Expected Apr 2027</small></div><div class="lineitem"><b>Biomedical Engineering Certificate</b><small>In progress</small></div><div class="lineitem"><b>Diploma in Engineering</b><small>Dalhousie · 2018</small></div></div><div class="panel"><h2 class="panel-heading-gold">Certifications</h2><div id="coding" class="lineitem"><b>MATLAB / numerical analysis</b><small>Project materials being prepared</small></div><div class="lineitem"><b>CFD / thermal modelling</b><small>Project materials being prepared</small></div><div id="fem" class="lineitem"><b>FEM / structural analysis</b><small>Examples to be added</small></div><div class="lineitem"><b>SolidWorks drawings</b><small>Drawing gallery coming soon</small></div><p class="notice">Only completed work and earned credentials will be presented as such. Actual project images will replace the concept diagrams.</p></div></section>
+    <section id="recommendation-letters" class="recommendation-section" aria-labelledby="recommendation-heading">
+      <div class="section-head"><h2 id="recommendation-heading">Recommendation Letters</h2></div>
+      <div class="recommendation-grid">
+        <div class="recommendation-card">
+          <div class="recommendation-type">ACADEMIC</div>
+          <h3>Academic Recommendations</h3>
+          <p>Recommendation letters from academic referees can be featured here after permission to share them has been confirmed.</p>
+          <span class="recommendation-state">Letters to be added</span>
+        </div>
+        <div class="recommendation-card">
+          <div class="recommendation-type">PROFESSIONAL</div>
+          <h3>Professional Recommendations</h3>
+          <p>Approved recommendation letters from supervisors or project collaborators can be presented here.</p>
+          <span class="recommendation-state">Letters to be added</span>
+        </div>
+      </div>
+    </section>
   </main>
   <footer id="contact" class="footer wrap"><span>© <span id="year">2026</span> Mohamed Morsy · Mechanical Engineering Portfolio</span><div class="footer-links"><a class="textlink" href="mailto:m.morsy@dal.ca" aria-label="Email Mohamed Morsy">m.morsy@dal.ca</a><a class="textlink" href="tel:+19024834639" aria-label="Call Mohamed Morsy">902-483-4639</a><a class="textlink" href="https://www.linkedin.com/in/mohamed-morsy-aa0553168/" target="_blank" rel="noopener noreferrer" aria-label="Mohamed Morsy on LinkedIn">LinkedIn ↗</a> <a class="textlink" href="https://github.com/Mohamed-M-I-A-Morsy" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></footer>
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
